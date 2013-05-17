@@ -1,31 +1,15 @@
 // Name: James Lavender
 // 5/16/2013
-// Expression Worksheet
-// Discounts
+// Assignment: Expressions
+// Wacky
 
 // JavaScript
 
-var itemName = "Speakers"
+var clownsBox = prompt ("We are calculating the number of clowns total. \nHow many clowns are in each box?"); // This is the number of clown in each box.
+var numberBoxs = prompt ("How many boxes are there total?"); // This is the number of boxes present.
 
-var originalPrice = 87.99
-var discountPercent = 0.35
-var salesTax = 0.5
+var totalClowns = clownsBox * numberBoxs; // This is the total amount of clowns.
 
-var withoutTax = originalPrice - (originalPrice * discountPercent);
+var result = "There are " + totalClowns + " in all " + numberBoxs + " boxes."; // This is result of total clowns to the user.
 
-var withTax = withoutTax + (withoutTax * salesTax)
-
-// Sentence structure.
-
-var firstPart = "Your"
-var secondPart = "were originally $"
-var thirdPart = ", but after a"
-var forthPart = "% discount, they are now $"
-var fifthPart = "without tax, and $"
-var sixthPart = "with tax."
-
-// Full statement.
-
-var fullSentence = firstPart + " " + itemName + " " + secondPart + originalPrice + thirdPart + " " + discountPercent + forthPart + withoutTax + " " + fifthPart + withTax + " " + sixthPart 
-
-console.log(fullSentence);
+alert(result); // This is stating and alerting the user of how many clown there are total.
