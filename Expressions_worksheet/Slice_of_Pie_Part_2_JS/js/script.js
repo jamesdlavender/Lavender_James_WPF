@@ -16,4 +16,4 @@ var answer = (pizzaOrdered * slicesPizza)%peopleParty; // Remainer pieces of piz
 
 var fullSentence = firstPart + " " + answer + " " + lastPart; // Full statement with answers.
 
-console.log(answer); // Answer is 18.
+console.log(fullSentence); // Answer is 18.
