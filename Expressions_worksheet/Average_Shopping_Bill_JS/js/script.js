@@ -1,13 +1,23 @@
 // Name: James Lavender
 // 5/16/2013
 // Expression Worksheet
+// Average Shopping Bill
 
 // JavaScript
 
-var actualAge = 2 // Sparky's actual age.
-var dogAge = 7 // Dogs age 7 time faster than humans.
+// Each shopping bill for each week.
 
-// Sparky's age in dog years.
-var ageAnswer = actualAge * dogAge
+var week1 = 205;
+var week2 = 189;
+var week3 = 176;
+var week4 = 197;
+var week5 = 201;
 
-console.log(ageAnswer);
+var numberWeeks = 5;
+
+// The average of all the bills.
+
+var average = (week1 + week2 + week3 + week4 + week5) / numberWeeks;
+
+
+console.log(average);
