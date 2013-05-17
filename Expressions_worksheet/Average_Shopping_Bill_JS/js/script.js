@@ -15,9 +15,16 @@ var week5 = 201;
 
 var numberWeeks = 5;
 
+var firstPart = "You have spent a total of $"
+var middlePart = "on groceries over 5 weeks. That is an average of $"
+var lastPart = "per week."
+
 // The average of all the bills.
 
-var average = (week1 + week2 + week3 + week4 + week5) / numberWeeks;
+var total = week1 + week2 + week3 + week4 + week5;
 
+var average = total / numberWeeks;
 
-console.log(average);
+var fullSentence = firstPart + total + " " + middlePart + average + " " + lastPart;
+
+console.log(fullSentence);
