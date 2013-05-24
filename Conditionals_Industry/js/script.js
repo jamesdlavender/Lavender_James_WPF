@@ -3,8 +3,9 @@
 // Conditionals Worksheet
 // Conditionals Industry
 
-// You must have a certain IQ to past the test.
+// If the user went over or stay ver the budget. (Used a ternary.)
 
-var degrees = prompt ("Please enter the temperature of the below.");
+var amountSpent = prompt ("Please enter the amount you have spent. (Note: 400.78 is the Budget)"); // The will ask the user to type in his or her IQ.
+var budgetAmount = 400.78;
 
-var unit = prompt ("Please enter the unit type below.");
+(amountSpent <= budgetAmount) ? alert("You did not go over the budget.") : alert("You went over the budget!"); // This determinds if the user went over the budget or not.
