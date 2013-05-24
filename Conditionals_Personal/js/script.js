@@ -1,7 +1,7 @@
 // Name: James Lavender
 // 5/23/2013
 // Conditionals Worksheet
-// Conditionals Industry
+// Conditionals Personal
 
 // You must have a certain IQ to pass the test.
 
