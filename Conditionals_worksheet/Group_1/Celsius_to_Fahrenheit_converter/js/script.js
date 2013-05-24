@@ -1,30 +1,17 @@
 // Name: James Lavender
-// 5/16/2013
-// Expression Worksheet
-// Average Shopping Bill
+// 5/23/2013
+// Conditionals Worksheet
+// Celsius to Fahrenheit converter
 
-// JavaScript
+var degrees = prompt ("Please enter the temperature of the below."); // Will ask the user to enter a value.
 
-// Each shopping bill for each week.
+var unit = prompt ("Please enter the unit type below."); // Will ask if the user wants "C" or "F" for degrees measurement.
 
-var week1 = 205;
-var week2 = 189;
-var week3 = 176;
-var week4 = 197;
-var week5 = 201;
-
-var numberWeeks = 5;
-
-var firstPart = "You have spent a total of $"
-var middlePart = "on groceries over 5 weeks. That is an average of $"
-var lastPart = "per week."
-
-// The average of all the bills.
-
-var total = week1 + week2 + week3 + week4 + week5;
-
-var average = total / numberWeeks;
-
-var fullSentence = firstPart + total + " " + middlePart + average + " " + lastPart;
-
-console.log(fullSentence);
+if (unit === "C") // This is the operation that figures if the user typed a celsius degree or a fahrenheit one and then figures it
+ {
+ 	var degreesF = degrees * 9 / 5 + 32; // If the user chose C then it will figure with this evaluation  put out a Fahrenheit degree
+ 	console.log(degreesF + " " "F");
+ }else{
+ 	var degreesC = (degrees - 32) * 5 / 9; // If the user chose F then it will figure with this evaluation and put out a Celsius degree
+ 	console.log(degreesC + " " "C");
+ }
