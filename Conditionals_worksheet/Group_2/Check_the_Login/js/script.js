@@ -1,30 +1,20 @@
 // Name: James Lavender
-// 5/16/2013
-// Expression Worksheet
-// Average Shopping Bill
+// 5/23/2013
+// Conditionals Worksheetfahrenheit to celsius converter javascript
+// Check the Login
 
-// JavaScript
+var userName = prompt ("Please enter your Username below."); // Asks the user to type in their username.
 
-// Each shopping bill for each week.
+var passWord = prompt ("Please enter your Password below."); // Asks the user to type in their password.
 
-var week1 = 205;
-var week2 = 189;
-var week3 = 176;
-var week4 = 197;
-var week5 = 201;
-
-var numberWeeks = 5;
-
-var firstPart = "You have spent a total of $"
-var middlePart = "on groceries over 5 weeks. That is an average of $"
-var lastPart = "per week."
-
-// The average of all the bills.
-
-var total = week1 + week2 + week3 + week4 + week5;
-
-var average = total / numberWeeks;
-
-var fullSentence = firstPart + total + " " + middlePart + average + " " + lastPart;
-
-console.log(fullSentence);
+// Determinds if the information provided by the user is correct.
+if (userName == "Student" && passWord == "qwerty123"){
+	// This will alert the user if the username and password is correct.
+	alert("Welcome" + " " + userName + "!");
+}else if(userName != "Student"){
+	// This will alert the user if the username is INCORRECT and the password is CORRECT.
+	alert("User not found. Try again.");
+}else{
+	// This will alert the user if the username is CORRECT and the password is INCORRECT.
+   	alert("Password does not match our records.");
+}
