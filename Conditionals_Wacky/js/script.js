@@ -1,17 +1,18 @@
 // Name: James Lavender
 // 5/23/2013
 // Conditionals Worksheet
-// Celsius to Fahrenheit converter
+// Conditionals Wacky
 
-var degrees = prompt ("Please enter the temperature of the below."); // Will ask the user to enter a value.
+//
 
-var unit = prompt ("Please enter the unit type below."); // Will ask if the user wants "C" or "F" for degrees measurement.
+var mallowsAte = prompt ("Please enter now many marshmellows you think you can fit in your mouth.");
+var minMallows = 20;
+var maxMallows = 40;
 
-if (unit === "C") // This is the operation that figures if the user typed a celsius degree or a fahrenheit one and then figures it
- {
- 	var degreesF = degrees * 9 / 5 + 32; // If the user chose C then it will figure with this evaluation  put out a Fahrenheit degree
- 	console.log(degreesF + " " "F");
- }else{
- 	var degreesC = (degrees - 32) * 5 / 9; // If the user chose F then it will figure with this evaluation and put out a Celsius degree
- 	console.log(degreesC + " " "C");
- }
+if(mallowsAte < minMallows ){
+	alert("You didin't eat enough marshmallows! You Lost!")
+}else if(mallowsAte > maxMallows ){
+	alert("You ate to many marshmallows! You Lost!")
+}else{
+	alert("You didn't eat the max amount of marshmallows but you ate more than the minimum amount. You WIN!")
+}
