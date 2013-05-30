@@ -16,6 +16,6 @@ var calcTotal = function(week1, week2, week3, week4){ // Defining the function.
 	return total;
 }
 
-var a = calcTotal(week1, week2, week3, week4);
+var total = calcTotal(week1, week2, week3, week4);
 
-(a >= calorieMax) ? alert("You did not go over the calorie limit " + calorieMax + " your total was " + a + "." ) : alert("You went over the " + calorieMax + " calorie limit!");
+(total >= calorieMax) ? alert("You did not go over the calorie limit " + calorieMax + " your total was " + total + "." ) : alert("You went over the " + calorieMax + " calorie limit!");

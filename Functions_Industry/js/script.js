@@ -11,6 +11,7 @@ var width = prompt ("Please enter the width of the building.");
 var height = prompt ("Please enter the height of the building.");
 var depth = prompt ("Please enter the depth of the building.");
 
+// Anonymous function, and has 3 operators.
 var calcVolume = function(width, height, depth){ // Defining the function.
 	var volume = width * height * depth;
 	return volume;
