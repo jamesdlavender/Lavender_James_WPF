@@ -5,17 +5,28 @@
 
 // JavaScript
 
-var week1 = prompt("Did you go over the max calories which was 10000? \n\nYour calores for the first week?");
-var week2 = prompt("Your calories for the second week?");
-var week3 = prompt("Your calories for the third week?");
-var week4 = prompt("Your calories for the fourth week?");
-var calorieMax = 10000;
+// This includes an else if, anonymous function, named function.
 
-var calcTotal = function(week1, week2, week3, week4){ // Defining the function.
-	var total = week1 + week2 + week3 + week4;
+
+var calories = prompt("How many calories do you consume a week?")
+var weeks = 4; // How many weeks are in a month.
+var caloriesMin = 10000; // Min calories.
+var caloriesMax = 80000; // Max calories.
+
+var calcCal = function(weeks, calories){ // Defining the function. Anonymous function.
+	var total = weeks * calories; // The actual multiplying.
 	return total;
 }
 
-var total = calcTotal(week1, week2, week3, week4);
+var totalCal = calcCal(weeks, calories); // Named function.
 
-(total >= calorieMax) ? alert("You did not go over the calorie limit " + calorieMax + " your total was " + total + "." ) : alert("You went over the " + calorieMax + " calorie limit!");
+if (totalCal > caloriesMin && totalCal < caloriesMax){
+	// This will determindif you have met the calorie goal.
+	alert("You have successfully completed your monthly goal!");
+}else if(totalCal != caloriesMin){ // else if.
+	// If you have below the min calories then this will show.
+	alert("You did not consume enough calories for the month!");
+}else{
+	// If you have consumed more than 80000 this will show.
+   	alert("You have failed your goal for the month!");
+}
