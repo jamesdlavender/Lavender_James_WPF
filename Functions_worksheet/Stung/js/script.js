@@ -5,12 +5,14 @@
 
 // JavaScript
 
+// Calculating the total amount of bee stings using the bee stings per pound and the total weight of an animal.
+
 var beeStings = 8.666666667; // Number of bee stings per pound.
 var animalPounds = 400; // How much the animal weighs in pounds.
 
 var calcStings = function(beeStings, animalPounds){
-	//Cod the function runs. Stings times Pounds equals the number of Stings total.
-	var overallStings = beeStings * animalPounds;
+	//Code the function runs. Stings times Pounds equals the number of Stings total.
+	var overallStings = beeStings * animalPounds; // 
 	return overallStings; // Returns the total amount of stings.
 }
 
