@@ -20,4 +20,4 @@ var a = calcVolume(width, height, depth); // This invokes the function.
 
 //(var <= var) ? alert() : alert();
 
-console.log(a); // This outputs to console.
+alert("The volume of the build is " + a + ". The width was " + width + ", height was " + height + ", and the depth was " + depth + "."); // This outputs to console.
