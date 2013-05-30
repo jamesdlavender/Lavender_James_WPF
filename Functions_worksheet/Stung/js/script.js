@@ -12,7 +12,7 @@ var animalPounds = 400; // How much the animal weighs in pounds.
 
 var calcStings = function(beeStings, animalPounds){
 	//Code the function runs. Stings times Pounds equals the number of Stings total.
-	var overallStings = beeStings * animalPounds; // 
+	var overallStings = beeStings * animalPounds; // Piece of code that actually multiplies the stings with the pounds.
 	return overallStings; // Returns the total amount of stings.
 }
 
