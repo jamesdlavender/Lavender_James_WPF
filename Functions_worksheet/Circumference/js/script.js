@@ -16,6 +16,6 @@ var calcCircle = function(radius, pi){ // Defining the function.
 	return circumference; // Returns the circumference of the circle.
 }
 
-var a = calcCircle(7, 3.14) // This invokes the function.
+var a = calcCircle(7, 3.14); // This invokes the function.
 
 console.log("The circumference of the circle is " + a); // This outputs to console.
