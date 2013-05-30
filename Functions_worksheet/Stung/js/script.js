@@ -15,4 +15,4 @@ var calcStings = function(beeStings, animalPounds){
 
 var a = calcStings(8.666666667, 400);
 
-console.log(a);
+console.log("It takes " + a + " bee stings to kill a " + animalPounds + "lbs. animal.");
