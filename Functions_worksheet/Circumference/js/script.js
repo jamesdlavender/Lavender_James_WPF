@@ -5,6 +5,8 @@
 
 // JavaScript
 
+// Calculating the circumference of a circle using Functions.
+
 var radius = 7; // Radius of the circle is 7.
 var pi = 3.14; // Pi is required to find the circumference of a circle.
 
