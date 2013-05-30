@@ -10,7 +10,7 @@ var pi = 3.14; // Pi is required to find the circumference of a circle.
 
 var calcCircle = function(radius, pi){
 	// This calculates the circumference of a circle by multiplying.
-	var circumference = radius * pi;
+	var circumference = radius * pi; // This part does the actual multiplication.
 	return circumference;
 }
 
