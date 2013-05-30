@@ -8,9 +8,11 @@
 var radius = 7;
 var pi = 3.14;
 
-var circumference =calculateCirle(radius, pi);
-console.log("The circumference of the circle is " + circumference);
-
-private function calculateCirle(r, p){
-	return r*p;
+var calcCircle = function(radius, pi){
+	var circumference = radius * pi;
+	return circumference;
 }
+
+var a = calcCircle(7, 3.14)
+
+console.log("The circumference of the circle is " + a);
